@@ -1,27 +1,15 @@
-const resultText= document.getElementById('result')  
-const btn=document.getElementById("btn")
-const loading=document.getElementById("loading")
-  
+ const buttontag=document.getElementById('buttontag')
+ 
+ 
+ function nohandler(){
+    if(buttontag.style.cssText.includes("column-reverse")){
+        buttontag.style.cssText='flex-direction:column'
+    }
+    else{
+    buttontag.style.cssText='flex-direction:column-reverse'
+    }
 
-  
-function tosshandler(){
-    resultText.style.display='None'
-    btn.style.display='None'
-    loading.style.display='flex'
-
-setTimeout(() => {
-    resultText.style.display='block'
-    btn.style.display='flex'
-    loading.style.display='none'
-    btn.innerText="Toss Again"
-},4000);
-
-
-
-    const random=Math.round(Math.random())
-    if(random==0)
-        resultText.innerText='Tails'
-    else
-     resultText.innerText="Heads"
 }
-
+function messagehandler(){
+    window.open("https://api.whatsapp.com/send/?phone=yournumber..&text=hi,%20I%20like%20you")
+}
