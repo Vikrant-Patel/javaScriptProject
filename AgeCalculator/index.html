@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="card">
+        <div class="Heading"> 
+            <p > Age Calculator</p>
+        </div>
+
+        <div class="input" id="Date Of Birth">
+            <label style="font-size: 35px;" for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <br>
+        <div class="input" id=" current Date Of Birth">
+            <label style="font-size: 35px;" for="dob">Current Date:</label>
+            <input type="date" id="cdob" name="dob" required>
+        </div>
+        <br>
+        <div  style=" text-align: center;" id="button" >
+            <button  style=" color:black; height:30px ;width:20%" id="calculate" onclick="CurrentAge()">Calculate</button>
+        </div>
+        <div  style="font-size: 32px;" id="result">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
